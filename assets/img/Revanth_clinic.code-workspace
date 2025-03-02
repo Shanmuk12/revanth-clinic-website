@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../../personal-site-main/Revanth_clinic"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../css"
+		},
+		{
+			"path": "../../dist"
+		},
+		{
+			"path": "../../js"
+		}
+	],
+	"settings": {}
+}
