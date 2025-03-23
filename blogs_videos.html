@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr.Revanth's - Brain & Spine Centre</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets\img\logo revanth.svg" type="image/x-icon" />
+    <!-- css -->
+    <link rel="stylesheet" href="dist/output.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/demo.css">
+    <style>
+        @media(min-width:1150px) {
+            #ch {
+                position: relative;
+                top: -200px;
+            }
+        }
+    </style>
+    <!-- custom js -->
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="w-full fixed top-0 z-50 bg-white">
+        <nav class="flex items-center justify-between py-8 wrapper relative">
+            <div class="flex items-center gap-16">
+                <div class="flex items-center gap-16">
+                    <div class="flex items-center gap-2">
+                        <img src="assets\img\logo revanth (1).svg" alt="Logo" class="h-8" />
+                        <a href="/" class="text-2xl font-bold text-black">
+                            Dr.Revanth's <span class="text-blue">Brain & Spine Centre</span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="hidden lg:flex gap-8 font-medium text-base text-black justify-center items-start"
+                    id="menu-box">
+                    <a href="/" class="text-hover hover:text-gold">Home</a>
+                    <a href="#about" class="text-hover hover:text-gold">About</a>
+                    <a href="#services" class="text-hover hover:text-gold">Services</a>
+                    <a href="#appointment" class="text-hover hover:text-gold">Appointment</a>
+                    <a href="#contact" class="text-hover hover:text-gold">Contact</a>
+                    <a href="./blogs_videos.html" class="text-hover hover:text-gold">blogs and videos</a>
+                </div>
+            </div>
+            <div class="lg:hidden">
+                <button id="openmenu-btn">
+                    <iconify-icon icon="ci:menu-alt-02" class="text-black text-4xl"></iconify-icon>
+                </button>
+            </div>
+            <div class="hidden lg:inline-block">
+                <a href="#"
+                    class=" flex items-center justify-between gap-2 py-3 px-5 font-bold text-base rounded-lg shadow-600 hover:bg-blue-hover transition duration-300">
+                    <iconify-icon icon="uil:calender"></iconify-icon>
+                    Book an Appointment</a>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="fixed bg-blue top-0 left-0 right-0 bottom-0 px-[5%] py-8 origin-right animate-open-menu hidden">
+                <div class="flex items-center justify-between">
+                    <h4 class="text-2xl font-bold text-white">Dr.Revanth's Brain and Spine Centre</h4>
+                    <button id="closemenu-btn">
+                        <iconify-icon icon="jam:close" class="text-4xl text-white"></iconify-icon>
+                    </button>
+                </div>
+                <nav class="gap-8 font-medium flex flex-col text-white items-start text-4xl w-full h-full justify-center"
+                    id="menu-box" aria-label="mobile">
+                    <a href="/" class="text-hover hover:text-gold">Home</a>
+                    <a href="#about" class="text-hover hover:text-gold">About</a>
+                    <a href="#services" class="text-hover hover:text-gold">Services</a>
+                    <a href="#appointment" class="text-hover hover:text-gold">Appointment</a>
+                    <a href="#contact" class="text-hover hover:text-gold">Contact</a>
+                    <a href="./blogs_videos.html" class="text-hover hover:text-gold">blogs and videos</a>
+                    <a href="#"
+                        class="bg-gold text-black flex items-center justify-between gap-2 py-3 px-5 font-bold text-base rounded-lg shadow-600 hover:bg-yellow-500 transition duration-300">
+                        <iconify-icon icon="uil:calender"></iconify-icon>
+                        Book an Appointment</a>
+                    </n>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="mt-28 text-black">
+        <!-- Blogs Section -->
+        <section id="services" class="wrapper pt-36 pb-36">
+            <div class="flex flex-col md:flex-row items-start justify-between mb-10 md:mb-2 gap-0 md:gap-10">
+                <div class="lg:w-2/5 md:w-1/2">
+                    <h2 class="font-medium text-4xl lg:text-5xl !leading-[140%]">Our <span class="bg-gold">Blogs</span>
+                    </h2>
+                </div>
+                <div class="md:w-2/5 font-medium text-lg leading-[150%] text-gray-text ">
+                    <p class="mb-5">
+                        We utilize minimally invasive endoscopic techniques for spine and brain surgery, resulting in
+                        faster recovery, less pain, and reduced risk of complications.
+                    </p>
+                    <p>
+                        Let us provide you with expert care and personalized treatment plans to help you regain your
+                        quality of life. Our team is dedicated to providing the best possible outcomes.
+                    </p>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 justify-between gap-5 blog-child">
+                <div class="card-service">
+                    <div>
+                        <img src="assets/img/demo-thumbnail.png" alt="endoscopic spine surgery icon" class="mb-2">
+                    </div>
+                    <h5 class="font-semibold text-xl leading-[150%]">Blog-1</h5>
+                    <p class="text-gray-light font-medium text-base leading-[150%]">Minimally invasive procedures for
+                        herniated discs, spinal stenosis, and other conditions.</p>
+                    <a href="#" class="flex gap-2 items-center font-bold hover:scale-105 transition duration-200">Read
+                        More <iconify-icon icon="gg:arrow-right"></iconify-icon></a>
+                </div>
+                <div class="card-service">
+                    <div>
+                        <img src="assets/img/demo-thumbnail.png" alt="endoscopic brain surgery icon" class="mb-2">
+                    </div>
+                    <h5 class="font-semibold text-xl leading-[150%]">Blog-2</h5>
+                    <p class="text-gray-text font-medium text-base leading-[150%]">Accessing and treating brain tumors,
+                        cysts, and other abnormalities with minimal disruption.</p>
+                    <a href="#" class="flex gap-2 items-center font-bold hover:scale-105 transition duration-200">Read
+                        More <iconify-icon icon="gg:arrow-right"></iconify-icon></a>
+                </div>
+                <div class="card-service">
+                    <div>
+                        <img src="assets/img/demo-thumbnail.png" alt="peripheral nerve surgery icon" class="mb-2">
+                    </div>
+                    <h5 class="font-semibold text-xl leading-[150%]">Blog-3</h5>
+                    <p class="text-gray-light font-medium text-base leading-[150%]">Repairing and relieving pressure on
+                        peripheral nerves to alleviate pain and restore function.</p>
+                    <a href="#" class="flex gap-2 items-center font-bold hover:scale-105 transition duration-200">Read
+                        More <iconify-icon icon="gg:arrow-right"></iconify-icon></a>
+                </div>
+                <div class="card-service">
+                    <div>
+                        <img src="assets/img/demo-thumbnail.png" alt="peripheral nerve surgery icon" class="mb-2">
+                    </div>
+                    <h5 class="font-semibold text-xl leading-[150%]">Blog-4</h5>
+                    <p class="text-gray-light font-medium text-base leading-[150%]">Repairing and relieving pressure on
+                        peripheral nerves to alleviate pain and restore function.</p>
+                    <a href="#" class="flex gap-2 items-center font-bold hover:scale-105 transition duration-200">Read
+                        More <iconify-icon icon="gg:arrow-right"></iconify-icon></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Videos Section -->
+        <section id="services" class="wrapper pt-36 pb-36">
+            <div class="flex flex-col md:flex-row items-start justify-between mb-10 md:mb-2 gap-0 md:gap-10">
+                <div class="lg:w-2/5 md:w-1/2">
+                    <h2 class="font-medium text-4xl lg:text-5xl !leading-[140%]">Our <span class="bg-gold">Videos</span>
+                    </h2>
+                </div>
+                <div class="md:w-2/5 font-medium text-lg leading-[150%] text-gray-text ">
+                    <p class="mb-5">
+                        We utilize minimally invasive endoscopic techniques for spine and brain surgery, resulting in
+                        faster recovery, less pain, and reduced risk of complications.
+                    </p>
+                    <p>
+                        Let us provide you with expert care and personalized treatment plans to help you regain your
+                        quality of life. Our team is dedicated to providing the best possible outcomes.
+                    </p>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 justify-between gap-5 blog-child">
+                <div class="card-service">
+                    <div>
+                        <img src="assets/img/demo-thumbnail.png" alt="endoscopic spine surgery icon" class="mb-2">
+                    </div>
+                    <h5 class="font-semibold text-xl leading-[150%]">Video-1</h5>
+                    <p class="text-gray-light font-medium text-base leading-[150%]">Minimally invasive procedures for
+                        herniated discs, spinal stenosis, and other conditions.</p>
+                    <a href="#" class="flex gap-2 items-center font-bold hover:scale-105 transition duration-200">Read
+                        More <iconify-icon icon="gg:arrow-right"></iconify-icon></a>
+                </div>
+                <div class="card-service">
+                    <div>
+                        <img src="assets/img/demo-thumbnail.png" alt="endoscopic brain surgery icon" class="mb-2">
+                    </div>
+                    <h5 class="font-semibold text-xl leading-[150%]">Video-2</h5>
+                    <p class="text-gray-text font-medium text-base leading-[150%]">Accessing and treating brain tumors,
+                        cysts, and other abnormalities with minimal disruption.</p>
+                    <a href="#" class="flex gap-2 items-center font-bold hover:scale-105 transition duration-200">Read
+                        More <iconify-icon icon="gg:arrow-right"></iconify-icon></a>
+                </div>
+                <div class="card-service">
+                    <div>
+                        <img src="assets/img/demo-thumbnail.png" alt="peripheral nerve surgery icon" class="mb-2">
+                    </div>
+                    <h5 class="font-semibold text-xl leading-[150%]">Video-3</h5>
+                    <p class="text-gray-light font-medium text-base leading-[150%]">Repairing and relieving pressure on
+                        peripheral nerves to alleviate pain and restore function.</p>
+                    <a href="#" class="flex gap-2 items-center font-bold hover:scale-105 transition duration-200">Read
+                        More <iconify-icon icon="gg:arrow-right"></iconify-icon></a>
+                </div>
+                <div class="card-service">
+                    <div>
+                        <img src="assets/img/demo-thumbnail.png" alt="peripheral nerve surgery icon" class="mb-2">
+                    </div>
+                    <h5 class="font-semibold text-xl leading-[150%]">Video-4</h5>
+                    <p class="text-gray-light font-medium text-base leading-[150%]">Repairing and relieving pressure on
+                        peripheral nerves to alleviate pain and restore function.</p>
+                    <a href="#" class="flex gap-2 items-center font-bold hover:scale-105 transition duration-200">Read
+                        More <iconify-icon icon="gg:arrow-right"></iconify-icon></a>
+                </div>
+            </div>
+        </section>
+
+
+             <!-- Testimoni Section -->
+      <section class="wrapper py-5">
+        <div class="mb-[72px]">
+          <h6 class="title-snap">what they say</h6>
+          <h2 class="font-medium text-4xl lg:text-5xl !leading-[140%]">Our patients <span class="bg-gold">trust us</span></h2>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between gap-12">
+          <div class="w-max">
+            <div class="text-center">
+              <div class="relative">
+                <img src="assets/img/test-2.jpg" alt="patient 1" class="w-28 rounded-full">
+                <div class="bg-gold w-9 h-9 rounded-full flex justify-center items-center absolute bottom-0 right-0">
+                  <iconify-icon icon="iconoir:quote-solid" class="text-blue"></iconify-icon>
+                </div>
+              </div>
+              <h5 class="font-bold !leading-[150%] text-xl mt-3">Shanmuk K.</h5>
+              <p class="text-gray-text text-base"> 21 y, India</p>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <div>
+              <p class="text-2xl leading-[150%] font-medium text-gray-text">
+                “Thanks to <span class="font-bold">Dr.Revanth's Brain and Spine Centre,</span> I am now pain-free after my endoscopic spine surgery.  During the whole treatment period he was were incredibly supportive.”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between gap-12 mt-10">
+          <div class="w-max">
+            <div class="text-center">
+              <div class="relative">
+                <img src="assets/img/test-1.jpg" alt="patient 1" class="w-28 rounded-full">
+                <div class="bg-gold w-9 h-9 rounded-full flex justify-center items-center absolute bottom-0 right-0">
+                  <iconify-icon icon="iconoir:quote-solid" class="text-blue"></iconify-icon>
+                </div>
+              </div>
+              <h5 class="font-bold !leading-[150%] text-xl mt-3">Kumari kalyani</h5>
+              <p class="text-gray-text text-base"> 45y, India</p>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <div>
+              <p class="text-2xl leading-[150%] font-medium text-gray-text">
+                “The clinic is very Highly equipped with <span class="font-bold">experienced doctors.</span> They operated my spinal cord very effectively. Now I can walk and play with my grand child. ”
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Info -->
+        <section class="wrapper py-24 flex flex-col md:flex-row gap-8 md:gap-5">
+            <div class="md:w-1/3 md:border-r-4 border-gold">
+                <h4 class="font-semibold text-2xl !leading-[140%] mb-4">Clinic Hours</h4>
+                <ul class="text-gray-text text-lg flex flex-col gap-3">
+                    <li class="!leading-[150%]"><span class="text-black font-medium">Monday - Friday: </span>08:00 AM -
+                        05:00 PM</li>
+                    <li class="!leading-[150%]"><span class="text-black font-medium">Saturday: </span>09:00 AM - 01:00
+                        PM</li>
+                    <li class="!leading-[150%]"><span class="text-black font-medium">Sunday: </span>Closed</li>
+                </ul>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between flex-auto gap-8 md:gap-0">
+                <div class="md:w-1/3">
+                    <h4 class="font-semibold text-2xl !leading-[140%] mb-4">Contact Information</h4>
+                    <ul class="text-gray-text text-lg flex flex-col gap-3">
+                        <li class="!leading-[150%]"><span class="text-black font-medium">Address: </span>D.No.
+                            8-1-53/23, 1" Floor, Sri Karakachettu Polamamba Temple Down, Beside SBI Bank, Waltair Main
+                            Road, Visakhapatnam - 530 017.</li>
+                        <li class="!leading-[150%]"><span class="text-black font-medium">Phone: </span>977-944-5809,
+                            630-410-1384</li>
+                        <li class="!leading-[150%]"><span class="text-black font-medium">Email:
+                            </span>info@elitesneuro.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-2xl !leading-[140%] mb-4">Social Media</h4>
+                    <ul class="text-gray-text text-lg flex flex-col gap-3">
+                        <li class="!leading-[150%]"><a href="#" class="text-hover">Instagram</a></li>
+                        <li class="!leading-[150%]"><a href="#" class="text-hover">Facebook</a></li>
+                        <li class="!leading-[150%]"><a href="#" class="text-hover">X (Twitter)</a></li>
+                        <li class="!leading-[150%]"><a href="#" class="text-hover">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-2xl !leading-[140%] mb-4">Quick Links</h4>
+                    <ul class="text-gray-text text-lg flex flex-col gap-3">
+                        <li class="!leading-[150%]"><a href="#" class="text-hover">Home</a></li>
+                        <li class="!leading-[150%]"><a href="#" class="text-hover">Services</a></li>
+                        <li class="!leading-[150%]"><a href="#" class="text-hover">About Us</a></li>
+                        <li class="!leading-[150%]"><a href="#" class="text-hover">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <section
+            class="wrapper py-10 bg-blue-dark text-white flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-center bg-line bg-no-repeat bg-cover bg-center">
+            <h4 class="text-2xl font-bold">Dr.Revanth's Brain and Spine Centre</h4>
+            <p class="text-sm">Copyright © 2025. All rights reserved. <span class="text-gold italic">built by Team
+                    Bug.Del</span></p>
+        </section>
+    </footer>
+
+    <!-- Iconify -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>
